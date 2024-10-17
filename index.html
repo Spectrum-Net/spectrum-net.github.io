@@ -1,9 +1,20 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-
   <title>SpectrumNet Dataset</title>
+  <link rel="stylesheet" href="styles.css" />
+
+<script>
+  function copyBlockquote() {
+    var blockquoteContent = document.querySelector('blockquote').innerText;
+    navigator.clipboard.writeText(blockquoteContent).then(function () {
+    }, function (err) {
+      alert("Failed to copy. Please try again.");
+    });
+  }
+</script>
 </head>
 
 <body>
@@ -12,26 +23,42 @@
     <h1>SpectrumNet</h1>
   </div>
 
-  <dl>
-    <dt><a
-        href="https://drive.usercontent.google.com/download?id=1a7UpmsZwWGJNlPo8yOf2yDltEh3pp6HN&export=download">SpectrumNet
-        Dataset (1.3G)</a></dt>
-  </dl>
-  <dl>
-    <dt><a href="https://github.com/spectrum-net">Github Repository</a></dt>
+  <div class="content">
+    <dl>
+      <dt><a href="https://drive.usercontent.google.com/download?id=1a7UpmsZwWGJNlPo8yOf2yDltEh3pp6HN&export=download">Download SpectrumNet Dataset (1.3G)</a></dt>
+    </dl>
+    <dl>
+      <dt><a href="https://github.com/spectrum-net/spectrum-net.github.io">Visit Our Github Repository</a></dt>
+    </dl>
 
     <div class="infoblock">
-      <p>RadioMaps.zip file contains png files of spectrum maps.</p>
-
-      <p>Terrain&BuildingInformation.zip file contains information of terrain and buildings in .npz format.</p>  
-        
-      <p> Parameter settings are marked in the file name of each png.</p>  
-        
-      <p> The naming rule is introduced in Appendix A of the paper manuscript in pdf. Paper can be found at 'SpectrumNet_Manuscript1.0.pdf', or https://arxiv.org/abs/2408.15252.</p> 
-        
-      <p>  New versions of SpectrmNet will be released continueously.</p>
+      <p><strong>RadioMaps.zip</strong> file contains PNG files of spectrum maps.</p>
+      <p><strong>Terrain&BuildingInformation.zip</strong> file contains information of terrain and buildings in .npz format.</p>
+      <p>Parameter settings are marked in the file name of each PNG.</p>
+      <p>The naming rule is introduced in Appendix A of the paper manuscript in PDF. You can find the paper at 'SpectrumNet_Manuscript1.0.pdf', or <a href="https://arxiv.org/abs/2408.15252">https://arxiv.org/abs/2408.15252</a>.</p>
+      <p>New versions of SpectrumNet will be released continuously.</p>
     </div>
-  </dl>
+
+    <ul>
+      <li>If you use our dataset, please cite our paper: <a href="https://arxiv.org/abs/2408.15252">"Generative AI on SpectrumNet: An Open Benchmark of Multiband 3D Radio Maps"</a>, arXiv preprint:2408.15252, Aug. 2024.</li>
+    </ul>
+
+    <blockquote>
+@article{zhang2024generative, <br>
+url = {https://arxiv.org/abs/2408.15252},<br>
+journal={arXiv preprint arXiv:2408.15252},<br>
+author = {Zhang, Shuhang and Jiang, Shuai and Lin, Wanjie and Fang, Zheng and Liu, Kangjun and Zhang, Hongliang and Chen, Ke},<br>
+title = {Generative AI on SpectrumNet: An Open Benchmark of Multiband 3D Radio Maps},<br>
+publisher = {arXiv},<br>
+year = {2024}<br>
+}
+    </blockquote>
+    <button class="copy-btn" onclick="copyBlockquote()">Copy Citation</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 SpectrumNet. All rights reserved.</p>
+  </footer>
 
 </body>
 
