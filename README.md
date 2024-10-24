@@ -1,6 +1,6 @@
 # FDRadiomap
 Due to file size limitation, please refer to this link for full dataset download
-https://drive.google.com/file/d/1HWzMi03_ymnxowVBcoMHvShh761LzpcT/view?usp=drive_link
+https://drive.google.com/file/d/10_h2-CNX0bWs3TH20pkojrjf4aFvPE3G/view?usp=drive_link
 
 RadioMaps.zip file contains png files of spectrum maps. 
 
